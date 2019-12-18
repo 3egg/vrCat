@@ -48,27 +48,22 @@
     </style>
   </head>
   <body style="overflow: hidden;padding: 0;margin: 0;">
-    <div class="bg-back" style="position: relative; z-index: 1;"></div>
-    <div class="video-1" style="width:85%; position:relative; padding-bottom:30.25%">
-      <video
-        src="./static/demo.mp4"
-        style="position: absolute; top:0; left: 0; width: 100%; height: 100%;transform: translateX(10%);object-fit:fill"
-        class="video-1"
-        autoplay
-        loop
-        type="video/mp4"
-      ></video>
+    <div class="bg-back" style="position: relative; z-index: 1;margin-bottom: -200px;"></div>
+    <div class="video-1" style="width:100%; position:relative; padding-bottom:60.25%">
+      <video src="./static/game-tips.mp4" style="position: absolute; top:0; left: 0; width: 100%; height: 100%;object-fit:fill" class="video-1" autoplay loop type="video/mp4">
+      </video>
     </div>
-    <button style="width: 50%;height: 60px;font-size: 40px;margin-bottom: 50px;margin-top: 50px;margin-left: 25%;" class="btn-bg game">
+    <!-- <button style="width: 50%;height: 60px;font-size: 40px;margin-bottom: 50px;margin-top: 50px;margin-left: 25%;" class="btn-bg game">
       开始游戏
-    </button>
+    </button> -->
     <script>
       document.querySelector('.bg-back').addEventListener('click', function() {
         window.open('../menu/index.html', '_self');
       });
-      document.querySelector('.game').addEventListener('click', function() {
-        window.open('./index.html', '_self');
-      });
+      setTimeout(function(){window.open('./index.html', '_self');}, 50000)
+      // document.querySelector('.game').addEventListener('click', function() {
+      //   window.open('./index.html', '_self');
+      // });
     </script>
   </body>
 </html>
