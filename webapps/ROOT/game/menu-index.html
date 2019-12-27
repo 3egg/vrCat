@@ -21,8 +21,10 @@
       .bg-back {
         width: 200px;
         height: 200px;
-        margin-left: 100px;
-        background: url('../img/backBtn.png') no-repeat center left;
+        float: right;
+        margin-right: 100px;
+        margin-top: -20px;
+        background: url('../img/returnBtn.png') no-repeat center left;
       }
       .btn-bg {
         display: inline-block;
@@ -50,8 +52,14 @@
   <body style="overflow: hidden;padding: 0;margin: 0;">
     <div class="bg-back" style="position: relative; z-index: 1;margin-bottom: -200px;"></div>
     <div class="video-1" style="width:100%; position:relative; padding-bottom:60.25%">
-      <video src="./static/game-tips.mp4" style="position: absolute; top:0; left: 0; width: 100%; height: 100%;object-fit:fill" class="video-1" autoplay loop type="video/mp4">
-      </video>
+      <video
+        src="./static/game-tips.mp4"
+        style="position: absolute; top:0; left: 0; width: 100%; height: 100%;object-fit:fill"
+        class="video-1"
+        autoplay
+        loop
+        type="video/mp4"
+      ></video>
     </div>
     <!-- <button style="width: 50%;height: 60px;font-size: 40px;margin-bottom: 50px;margin-top: 50px;margin-left: 25%;" class="btn-bg game">
       开始游戏
@@ -60,7 +68,9 @@
       document.querySelector('.bg-back').addEventListener('click', function() {
         window.open('../index.html', '_self');
       });
-      setTimeout(function(){window.open('./index.html', '_self');}, 50000)
+      setTimeout(function() {
+        window.open('./index.html', '_self');
+      }, 50500);
       // document.querySelector('.game').addEventListener('click', function() {
       //   window.open('./index.html', '_self');
       // });

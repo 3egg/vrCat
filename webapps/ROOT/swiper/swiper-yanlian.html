@@ -14,20 +14,12 @@
       body {
         position: relative;
         height: 100%;
-      }
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
+        background: url(../../../img/bg.jpg);
+        padding: 25px;
       }
       .swiper-container {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
       }
       .swiper-slide {
         text-align: center;
@@ -50,15 +42,15 @@
       .bg-back {
         width: 200px;
         height: 200px;
-        margin-left: 100px;
-        background: url(../img/backBtn.png) no-repeat center left;
-        position: relative;
-        margin-bottom: -200px;
+        background: url(../img/returnBtn.png) no-repeat center left;
+        position: absolute;
+        right: -28px;
+        top:-54px;
         z-index: 2;
       }
       img {
         width: 100%;
-        height: 100vh;
+        height: 100%;
       }
     </style>
   </head>
