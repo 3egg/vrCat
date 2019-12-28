@@ -20,8 +20,9 @@
         overflow: hidden;
       }
       .swiper-container {
-        width: calc(100% - 50px);
+        width: calc(100% - 200px);
         height: calc(100% - 300px);
+        margin: 0 100px;
       }
       .swiper-slide {
         text-align: center;
@@ -59,7 +60,7 @@
         height: 200px;
         background: url(../img/returnBtn.png) no-repeat center left;
         position: absolute;
-        right: -28px;
+        right: -75px;
         top:-54px;
         z-index: 2;
       }
@@ -101,8 +102,8 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-    <hr style="margin: 30px;"/>
-    <div style="margin: 30px; color: #fff; font-size: 24px;text-indent : 20px;letter-spacing:5px">
+    <hr style="margin: 30px 0;"/>
+    <div style="margin: 30px 0; color: #fff; font-size: 24px;text-indent : 20px;letter-spacing:5px">
       为增强广大市民了解和熟悉人民防空警报信号，提高社区居民防空抗灾意识，掌握常见的预防方法。保证社区居民遇有应急情况时，能够安全有序的进行疏散。水南社区人防工作站开展社区居民人防知识讲座活动，集中社区居民参观人防宣传展板活动，走进社区商铺及居民中发放人防宣传资料，组织社区居民参观人防民防体验馆。
     </div>
 
@@ -115,6 +116,7 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        // autoplay: 5000,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
