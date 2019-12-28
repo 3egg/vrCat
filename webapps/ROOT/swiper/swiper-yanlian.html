@@ -16,12 +16,13 @@
         height: 100%;
         background: url(../../../img/bg.jpg);
         padding: 25px;
-        margin:0;
+        margin: 0;
         overflow: hidden;
       }
       .swiper-container {
-        width: calc(100% - 50px);
+        width: calc(100% - 200px);
         height: calc(100% - 300px);
+        margin: 0 100px;
       }
       .swiper-slide {
         text-align: center;
@@ -59,7 +60,7 @@
         height: 200px;
         background: url(../img/returnBtn.png) no-repeat center left;
         position: absolute;
-        right: -28px;
+        right: -75px;
         top: -54px;
         z-index: 2;
       }
@@ -76,39 +77,30 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="imgs/IMG_4943.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_4947.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5025.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5029.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5037.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5056.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5078.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5080.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5086.JPG" />
-          
         </div>
         <div class="swiper-slide">
           <img src="imgs/IMG_5087.JPG" />
@@ -120,8 +112,8 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-    <hr style="margin:30px"/>
-    <div style="margin: 30px; color: #fff; font-size: 24px;text-indent : 20px;letter-spacing:5px">
+    <hr style="margin:30px 0" />
+    <div style="margin: 30px 0; color: #fff; font-size: 24px;text-indent : 20px;letter-spacing:5px">
       水南社区人防工作站通过组织防空防灾应急疏散演练，使社区居民掌握应急避险的方法，熟悉紧急疏散的程序要求和线路，提高群众紧急避险、自救自护和应变的能力，确保在战争等空难突发时，应急工作快速、高效、有序地进行，最大限度地保护人民群众的生命财产安全，减少危险带来的不必要损失和伤害。同时通过演练活动，提高突发公共事件下群众的应急反应能力和自救互救能力。
     </div>
     <!-- Swiper JS -->
@@ -132,6 +124,7 @@
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
+        // autoplay: 5000,
         loop: true,
         pagination: {
           el: '.swiper-pagination',
